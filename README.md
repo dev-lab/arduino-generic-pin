@@ -213,6 +213,9 @@ Command|Description
 * Put word `DEBUG` before the command in order to debug it (e.g. `DEBUG PS P13 V512`). As the result, if command is ok, the usual "OK ..." answer will be returned, if command is wrong, the error message will be returned.
 * Both PWM and Analog values are normalized to the same 10-bit basis: **min** = `0`, **max** = `1023`. 
 
+## Flashing and testing:
+![Arduino GenericPin Flash & Smoke Test](flash-n-test.gif)
+
 ## [License](LICENSE)
 Copyright (c) 2015 Taras Greben
 Licensed under the [Apache License](LICENSE).
