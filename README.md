@@ -20,7 +20,7 @@ Command|Description
 `AG P7`|Get the value of 7th analog pin.
 
 ### Flashing and smoke testing:
-![Arduino GenericPin Flash & Smoke Test](flash-n-test.gif)
+![Arduino GenericPin Flash & Smoke Test](https://github.com/dev-lab/blob/blob/master/iot-power-strip/flash-n-test.gif)
 
 ## Commands
 
