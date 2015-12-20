@@ -6,7 +6,7 @@ Provides a serial interface to configure, control, and request Arduino pins stat
 * Pin configuration and initial state can be stored in EEPROM to survive reboots
 
 ## Usage
-1. Upload [genericPin.ino](genericPin.ino) to Arduino board with [Arduino IDE](https://www.arduino.cc/en/Main/Software).
+1. Upload [genericPin.ino](genericPin/genericPin.ino) to Arduino board with [Arduino IDE](https://www.arduino.cc/en/Main/Software).
 2. Open **Tools -> Serial Monitor** in Arduino IDE, type `FG` and press *Enter*. It will respond with the name and version of just flashed GenericPin firmware. Play with commands (described below) to check how they work.
 3. From now on, Arduino Board is ready to be managed by any device (controller) that is able to communicate through serial port (e.g. [ESP8266](http://espressif.com/en/products/esp8266/) [board](https://en.wikipedia.org/wiki/ESP8266)). Just connect `Arduino RX` with `Controller TX`, and connect `Arduino TX` with `Controller RX`, and `Controller` will be able to send commands to `Arduino`.
 4. Examples of commands that can be sent:
@@ -18,6 +18,9 @@ Command|Description
 `CE P9 OP`|Configure 9th digital pin for PWM output and store the configuration in EEPROM to survive reboots.
 `PG P9`|Get the PWM value of 9th digital pin.
 `AG P7`|Get the value of 7th analog pin.
+
+### Flashing and smoke testing:
+![Arduino GenericPin Flash & Smoke Test](flash-n-test.gif)
 
 ## Commands
 
@@ -212,9 +215,6 @@ Command|Description
 * Nothing will be returned as a response to an invalid command by default. That is a workaround for ESP8266 sending some gibberish to UART on (re)start.
 * Put word `DEBUG` before the command in order to debug it (e.g. `DEBUG PS P13 V512`). As the result, if command is ok, the usual "OK ..." answer will be returned, if command is wrong, the error message will be returned.
 * Both PWM and Analog values are normalized to the same 10-bit basis: **min** = `0`, **max** = `1023`. 
-
-## Flashing and testing:
-![Arduino GenericPin Flash & Smoke Test](flash-n-test.gif)
 
 ## [License](LICENSE)
 Copyright (c) 2015 Taras Greben
