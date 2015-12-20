@@ -64,7 +64,7 @@ Command|Description
 
 Command|Description
 ---|---
-`CG P5`|Get 5th digital pin configuration - returns `IO` if it was previously configured with `CS P5 I0`
+`CG P5`|Get 5th digital pin configuration - returns `OK IO` if it was previously configured with `CS P5 I0`
 
 ### Digital Pin Set
 Set digital pin output to either `0` or `1`.
@@ -99,7 +99,7 @@ Command|Description
 
 Command|Description
 ---|---
-`DG P2`|Get the state of 2nd digital pin.
+`DG P2`|Get the state of 2nd digital pin, e.g.: `OK V1`
 
 ### PWM Pin Set
 Set PWM pin output to value from min `0` to max `1023`.
@@ -133,7 +133,7 @@ Command|Description
 
 Command|Description
 ---|---
-`PG P11`|Get the PWM value previusly set for 11th pin.
+`PG P11`|Get the PWM value previusly set for 11th pin, e.g.: `OK V42`
 
 ### Analog Get 
 Get the analog pin state (the value from one of ADC pins). The value will be in range `[0-1023]`.
@@ -149,7 +149,7 @@ Command|Description
 
 Command|Description
 ---|---
-`AG P6`|Get the analog input value from ADC on 6th analog pin.
+`AG P6`|Get the analog input value from ADC on 6th analog pin, e.g: `OK V512`
 
 ### Name Set
 Assign a name to Arduino instance.
@@ -173,13 +173,13 @@ Returns the previously assigned name of the Arduino board.
 
 Command|Description
 ---|---
-`NG`|Return previously assigned board name from EEPROM.
+`NG`|Return previously assigned board name from EEPROM
 
 #### Example:
 
 Command|Description
 ---|---
-`NG`|Return the name previously assigned with `NS NewName` command.
+`NG`|Return the name previously assigned with `NS NewName` command, e.g.: `OK Socket3`
 
 ### Firmware Set
 Various commands for modifying the state of the Arduino board.
@@ -209,7 +209,7 @@ Command|Description
 
 Command|Description
 ---|---
-`FG V`|Return the firmware version, e.g. `1.0.0`
+`FG V`|Return the firmware version, e.g. `OK 1.0.0`
 
 ## Notes:
 * Nothing will be returned as a response to an invalid command by default. That is a workaround for ESP8266 sending some gibberish to UART on (re)start.
