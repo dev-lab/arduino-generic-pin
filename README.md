@@ -56,6 +56,7 @@ Command|Description
 
 #### Parameter:
 * **`Pn`** Pin number prefixed with `P`, e.g.: `P5`,`P13`
+
 #### Example:
 
 Command|Description
@@ -73,6 +74,7 @@ Command|Description
 #### Parameters:
 * **`Pn`** Pin number prefixed with `P`, e.g.: `P5`,`P13`
 * **`Vn`** Ouput Value prefixed with `V`, e.g.: `V0`, `V1`
+
 #### Example:
 
 Command|Description
@@ -89,6 +91,7 @@ Command|Description
 
 #### Parameters:
 * **`Pn`** Pin number prefixed with `P`, e.g.: `P5`,`P13`
+
 #### Example:
 
 Command|Description
@@ -106,6 +109,7 @@ Command|Description
 #### Parameters:
 * **`Pn`** Pin number prefixed with `P`, e.g.: `P5`
 * **`Vn`** Ouput Value prefixed with `V`, e.g.: `V5`, `V1023`
+
 #### Example:
 
 Command|Description
@@ -121,6 +125,7 @@ Command|Description
 
 #### Parameters:
 * **`Pn`** Pin number prefixed with `P`, e.g.: `P5`,`P11`
+
 #### Example:
 
 Command|Description
@@ -136,6 +141,7 @@ Command|Description
 
 #### Parameters:
 * **`Pn`** Pin number prefixed with `P`, e.g.: `P6`
+
 #### Example:
 
 Command|Description
@@ -152,6 +158,7 @@ Command|Description
 
 #### Parameters:
 * **`NewName`** A name to be assigned to arduino board, e.g.: `Socket3`
+
 #### Example:
 
 Command|Description
