@@ -19,8 +19,8 @@ Command|Description
 `PG P9`|Get the PWM value of 9th digital pin.
 `AG P7`|Get the value of 7th analog pin.
 
-### Flashing and smoke testing:
-![Arduino GenericPin Flash & Smoke Test](https://github.com/dev-lab/blob/blob/master/iot-power-strip/flash-n-test.gif)
+### Flashing and smoke testing animation:
+[![Arduino GenericPin Flash & Smoke Test](https://github.com/dev-lab/blob/blob/master/iot-power-strip/flash-n-test-pic.png)](https://github.com/dev-lab/blob/blob/master/iot-power-strip/flash-n-test.gif)
 
 ## Commands
 
