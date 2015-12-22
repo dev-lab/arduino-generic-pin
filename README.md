@@ -221,4 +221,5 @@ Command|Description
 
 ## [License](LICENSE)
 Copyright (c) 2015 Taras Greben
+
 Licensed under the [Apache License](LICENSE).
